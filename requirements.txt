@@ -1,0 +1,30 @@
+# Python version: 3.10+ (tested on Python 3.10.11)
+# NOTE: RDKit is required for molecular fingerprint generation.
+# If rdkit-pypi installation fails, use: conda install -c conda-forge rdkit
+
+# Core data processing
+pandas==2.2.3
+numpy==1.26.4
+openpyxl==3.1.5
+
+# Machine learning
+scikit-learn==1.6.1
+xgboost==3.2.0
+
+# Cheminformatics
+rdkit-pypi==2022.9.5
+
+# Visualization
+matplotlib==3.10.1
+seaborn==0.13.2
+Pillow==11.2.1
+
+# Utilities
+joblib==1.4.2
+tqdm==4.67.3
+
+# Scientific computing
+scipy==1.15.2
+
+# Optional: for VIF calculation in collinearity analysis
+statsmodels==0.14.4
