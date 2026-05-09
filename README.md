@@ -47,8 +47,8 @@
 
 1. 克隆仓库：
 ```bash
-git clone https://github.com/yourusername/electrospun-nanofiber-prediction.git
-cd electrospun-nanofiber-prediction
+git clone https://github.com/Joey1444/Machine-Learning-Driven-Diameter-Prediction-for-Electrospun-Nanofibers.git
+cd Machine-Learning-Driven-Diameter-Prediction-for-Electrospun-Nanofibers
 ```
 
 2. 创建虚拟环境（推荐）：
