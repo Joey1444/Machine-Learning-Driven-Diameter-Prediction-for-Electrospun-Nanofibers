@@ -36,8 +36,9 @@ def clean_and_split_data():
     preds = init_model.predict(X)
 
     residuals = np.abs(y - preds)
-    threshold = residuals.mean() + 3 * residuals.std()
-    mask = residuals <= threshold
+    upper_threshold = residuals.mean() + 3 * residuals.std()
+    lower_threshold = residuals.mean() - 3 * residuals.std()
+    mask = (residuals >= lower_threshold) & (residuals <= upper_threshold)
 
     # 4. 分离数据（因为此时 df 包含了所有列，mask 过滤行后会自动保留元数据）
     df_clean = df[mask].copy()
